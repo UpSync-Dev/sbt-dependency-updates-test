@@ -1,0 +1,12 @@
+name: Pull Request Checks
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Dependency updates check
+        uses: upsync-dev/sbt-dependency-updates-action@main
