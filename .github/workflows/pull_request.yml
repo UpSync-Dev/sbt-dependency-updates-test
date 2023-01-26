@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: Dependency updates check
-        uses: UpSync-Dev/sbt-dependency-updates-action@v1
+        uses: UpSync-Dev/sbt-dependency-updates-action@v2
